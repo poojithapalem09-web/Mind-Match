@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Memory Card Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- START SCREEN -->
+  <div id="startScreen">
+    <h1>🧠 Memory Card Game</h1>
+    <p>🎯 Match all the cards as fast as you can.</p>
+    <p>🌸 Correct match gives flowers.</p>
+    <p>💥 Wrong match gives blast.</p>
+    <button id="startBtn">Start Game</button>
+  </div>
+
+  <!-- GAME SCREEN -->
+  <div id="gameScreen" style="display:none;">
+    <h1>🧠 Memory Card Game</h1>
+
+    <div class="stats">
+      <p>Moves: <span id="moves">0</span></p>
+      <p>Time: <span id="timer">0</span>s</p>
+      <button id="restart">Restart</button>
+    </div>
+
+    <p id="message"></p>
+    <div class="game-board" id="gameBoard"></div>
+  </div>
+
+  <!-- EFFECT CONTAINERS -->
+  <div id="flower-container"></div>
+  <div id="celebration-container"></div>
+
+  <!-- SOUNDS -->
+  <audio id="matchSound" src="match.mp3"></audio>
+  <audio id="winSound" src="win.mp3"></audio>
+  <audio id="bgMusic" src="bg-music.mp3" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
